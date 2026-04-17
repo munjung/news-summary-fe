@@ -52,7 +52,10 @@ function PeriodFetchModal({ onClose, onSuccess }) {
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div
+      className={`modal-overlay ${loading ? "pointer-events-auto" : ""}`}
+      onClick={!loading ? onClose : undefined}
+    >
       <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
         <div className="modal-handle" />
         <h2 className="modal-title">기간별 뉴스 가져오기</h2>

@@ -92,3 +92,7 @@
 .skeleton-card {
   @apply flex gap-4 p-4 bg-white rounded-xl border border-gray-100;
 }
+
+.modal-overlay-disabled {
+  @apply pointer-events-none;
+}
