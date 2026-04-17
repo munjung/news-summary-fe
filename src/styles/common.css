@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* 레이아웃 */
+.page-container {
+  @apply max-w-2xl mx-auto px-4 py-8;
+}
+
+/* 타이포그래피 */
+.page-title {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.source-label {
+  @apply text-xs text-blue-500 font-medium;
+}
+
+.date-label {
+  @apply text-xs text-gray-400;
+}
+
+/* 카드 */
+.news-card {
+  @apply flex gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md cursor-pointer transition;
+}
+
+/* 버튼 */
+.btn-primary {
+  @apply px-4 py-2 text-sm rounded-lg border border-gray-200 hover:bg-gray-50 disabled:opacity-30;
+}
+
+.btn-dark {
+  @apply block text-center py-3 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition;
+}
+
+/* AI 요약 박스 */
+.summary-box {
+  @apply bg-blue-50 rounded-xl p-4;
+}
+
+.summary-title {
+  @apply text-xs font-semibold text-blue-600 mb-2;
+}
+
+.summary-content {
+  @apply text-sm text-gray-700 leading-relaxed whitespace-pre-line;
+}
